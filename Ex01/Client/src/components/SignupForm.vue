@@ -63,8 +63,7 @@ export default {
       msg2="Go to home"
       msg3="/home"
     />
-    <div class="wrapper">
-        <div v-text="msg" v-bind:style="{ backgroundColor: input_color }"></div>
+    <div v-show="!show" class="wrapper">
         <h2>Signup</h2>
         <form >
            <div class="input-box">
@@ -105,6 +104,8 @@ export default {
                 id="pass"  />
                 <span id="message" style="color: red"></span>
             </div>
+
+             <div v-text="msg" v-bind:style="{ backgroundColor: input_color }"></div>
 
             <div class="policy">
                 <input type="checkbox" required />

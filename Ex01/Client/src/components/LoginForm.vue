@@ -77,7 +77,7 @@ export default {
       msg2="Go to home"
       msg3="/home"
     />
-        <div class="login-page">
+        <div v-show="!show" class="login-page">
             <div class="form">
                 <div class="login">
                     <div class="login-header">

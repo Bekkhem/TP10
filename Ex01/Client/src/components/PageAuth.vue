@@ -1,5 +1,5 @@
 <template>
-  <div class="frem">
+  <div  class="frem">
     <h2>{{ msg1 }}</h2>
     <h5>The page you are looking for not available</h5>
     <a v-bind:href="msg3">{{ msg2 }}</a>
@@ -7,6 +7,7 @@
 </template>
 
 <script>
+
 export default {
   layout: "empty",
   name: "PageAuth",
@@ -14,11 +15,12 @@ export default {
     msg1: String,
     msg2: String,
     msg3: String,
-  },
+  }
 };
 </script>
 
 <style scoped>
+
 * {
   margin: 0;
   padding: 0;

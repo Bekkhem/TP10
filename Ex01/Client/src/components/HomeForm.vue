@@ -6,7 +6,7 @@
       msg2="Go to sign in"
       msg3="/"
     />
-    <div class="container2" v-else>
+    <div class="container2"  v-else>
       <div class="home" v-if="userData != null">
         <h3>Welcome to Home Page</h3>
         <div>
@@ -46,7 +46,7 @@ export default {
       body: JSON.stringify({}),
     };
     const response = await fetch(
-      "http://localhost:3001/user/6235f164abb0577a1d2b858b",
+      "http://localhost:3001/user/624ef482c71270ca6bed04f9",
       requestOptions
     );
     const data = await response.json();
